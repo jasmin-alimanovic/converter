@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="d-flex justify-content-center align-items-center h-25">
+        <h1 class="text-center">Konverter mjernih jedinica</h1>
+      </div>
+      <div class="form-0">
+        <form class="form-group">
+          <select
+            name="kategorije"
+            id="kategorije"
+            class="form-control"
+            onchange="Odabir();"
+          >
+            <option value="0">Duljina</option>
+            <option value="1">Masa</option>
+            <option value="2">Volumen</option>
+            <option value="3">Snaga</option>
+            <option value="4">Povrsina</option>
+            <option value="5">Temperatura</option>
+          </select>
+        </form>
+      </div>
+      <div class="forme">
+        <!-- FORM A-->
+        <div class="form-a">
+          <form class="input-a">
+            <select
+              name="option1"
+              onchange="convert();"
+              class="select-a form-control"
+            >
+              <option value="0">...</option>
+              <option value="1">Metar</option>
+              <option value="2">Kilometar</option>
+              <option value="3">Milimetar</option>
+              <option value="4">Centimetar</option>
+              <option value="5">Decimetar</option>
+            </select>
+          </form>
+          <form class="input-a">
+            <select
+              name="option1"
+              onchange="convert();"
+              class="select-a form-control"
+            >
+              <option value="0">...</option>
+              <option value="1">Gram</option>
+              <option value="2">Kilogram</option>
+              <option value="3">Unca</option>
+            </select>
+          </form>
+        </div>
+        <!-- INPUTS-->
+        <div class="inputs input-group-lg">
+          <input
+            type="number"
+            value="0"
+            id="input"
+            class="form-control"
+            onchange="convert();"
+            oninput="convert();"
+            onclick="convert()"
+          />
+          <span style="margin-left: 49%;">=</span>
+          <input type="text" id="output" class="form-control" readonly />
+        </div>
+        <!-- FORM B-->
+        <div class="form-b">
+          <form class="input-b">
+            <select
+              name="option1"
+              onchange="convert();"
+              class="select-b form-control"
+            >
+              <option value="0">...</option>
+              <option value="1">Metar</option>
+              <option value="2">Kilometar</option>
+              <option value="3">Milimetar</option>
+              <option value="4">Centimetar</option>
+              <option value="5">Decimetar</option>
+            </select>
+          </form>
+          <form class="input-b">
+            <select
+              name="option1"
+              onchange="convert();"
+              class="select-b form-control"
+            >
+              <option value="0">...</option>
+              <option value="1">Gram</option>
+              <option value="2">Kilogram</option>
+              <option value="3">Unca</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
