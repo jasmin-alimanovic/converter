@@ -19,6 +19,7 @@
         <h1 class="text-center">Konverter mjernih jedinica</h1>
       </div>
       <div class="form-0">
+        <p style="margin-right: 10px;">Odaberi kategoriju:</p>
         <form class="form-group">
           <select
             name="kategorije"
@@ -38,6 +39,7 @@
       <div class="forme">
         <!-- FORM A-->
         <div class="form-a">
+          <p style="margin: 0 10px;">Iz jedinice:</p>
           <form class="input-a">
             <select
               name="option1"
@@ -50,6 +52,9 @@
               <option value="3">Milimetar</option>
               <option value="4">Centimetar</option>
               <option value="5">Decimetar</option>
+              <option value="6">Stopa</option>
+              <option value="7">Jard</option>
+              <option value="8">Milja</option>
             </select>
           </form>
           <form class="input-a">
@@ -62,6 +67,20 @@
               <option value="1">Gram</option>
               <option value="2">Kilogram</option>
               <option value="3">Unca</option>
+            </select>
+          </form>
+          <form class="input-a">
+            <select
+              name="option1"
+              onchange="convert();"
+              class="select-a form-control"
+            >
+              <option value="0">...</option>
+              <option value="1">Litar</option>
+              <option value="2">Mililitar</option>
+              <option value="3">Imperijalni galon</option>
+              <option value="4">US galon</option>
+              <option value="5">Kubni metar</option>
             </select>
           </form>
         </div>
@@ -81,6 +100,7 @@
         </div>
         <!-- FORM B-->
         <div class="form-b">
+          <p style="margin: 0 10px; margin-left: 0;">U jedinicu:</p>
           <form class="input-b">
             <select
               name="option1"
@@ -93,6 +113,9 @@
               <option value="3">Milimetar</option>
               <option value="4">Centimetar</option>
               <option value="5">Decimetar</option>
+              <option value="6">Stopa</option>
+              <option value="7">Jard</option>
+              <option value="8">Milja</option>
             </select>
           </form>
           <form class="input-b">
@@ -105,6 +128,20 @@
               <option value="1">Gram</option>
               <option value="2">Kilogram</option>
               <option value="3">Unca</option>
+            </select>
+          </form>
+          <form class="input-b">
+            <select
+              name="option1"
+              onchange="convert();"
+              class="select-b form-control"
+            >
+              <option value="0">...</option>
+              <option value="1">Litar</option>
+              <option value="2">Mililitar</option>
+              <option value="3">Imperijalni galon</option>
+              <option value="4">US galon</option>
+              <option value="5">Kubni metar</option>
             </select>
           </form>
         </div>
